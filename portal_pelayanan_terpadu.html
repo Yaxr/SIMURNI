@@ -13,7 +13,6 @@
       --green: #1f7a3a;
       --green-light: #4caf50;
       --white: #ffffff;
-      --red: #FF0000
       --max-width: 1200px;
     }
 
@@ -418,6 +417,11 @@
       <h1>Kabupaten Minahasa</h1> -->
     </div>
 
+    <div class="header-center">
+      <h2>SIMURNI</h2>
+      <p>Sistem Informasi Melayani Masyarakat, Mudah, Responsif, dan Integratif</p>
+    </div>
+
     <div class="header-right">
       <img src="LOGO_HUMAS_2.png" alt="Logo Humas">
       <img src="LOGO_BERAKHLAK.png" alt="Logo BerAKHLAK">
@@ -433,7 +437,7 @@
         <p class="subtitle">Sistem Informasi Melayani Masyarakat, Mudah, Responsif, dan Integratif</p>
       </div>
     </section>
-
+  
     <!-- SERVICES -->
     <section class="services">
       <div class="grid" id="servicesGrid">
@@ -474,7 +478,7 @@
           <div class="label">SURVEI ASPIRASI & PENILAIAN MASYARAKAT</div>
         </div>
       </div>
-
+    </section>
 
     <!-- KONTAK HUMAS -->
     <section class="contact-bar">
@@ -506,7 +510,7 @@
   </footer>
 
   <script>
-    const input = document.getElementById('searchInput');
+    /* const input = document.getElementById('searchInput'); */
     const grid = document.getElementById('servicesGrid');
     const cards = Array.from(grid.querySelectorAll('.service-card'));
 
@@ -522,8 +526,8 @@
       })
     }
 
-    input.addEventListener('input', filterServices);
-    document.getElementById('searchBtn').addEventListener('click', function(){ filterServices(); input.focus(); });
+    /* input.addEventListener('input', filterServices);
+    document.getElementById('searchBtn').addEventListener('click', function(){ filterServices(); input.focus(); }); */
 
     // Klik service-card
     cards.forEach(c=>{
